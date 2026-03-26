@@ -5,15 +5,15 @@ import pandas as pd
 import re
 from nltk.stem import SnowballStemmer
 
-st.title("🔍 Demo TF-IDF en Español")
+st.title("˖⌕ ۫ Demo TF-IDF en Español")
 
 # Documentos de ejemplo
-default_docs = """El perro ladra fuerte en el parque.
-El gato maúlla suavemente durante la noche.
-El perro y el gato juegan juntos en el jardín.
-Los niños corren y se divierten en el parque.
-La música suena muy alta en la fiesta.
-Los pájaros cantan hermosas melodías al amanecer."""
+default_docs = """El perro ladra fuerte en el parque ૮₍ • ᴥ • ₎ა.
+El gato maúlla suavemente durante la noche ₍^. .^₎Ⳋ.
+El perro y el gato juegan juntos en el jardín ✿.
+Los niños corren y se divierten en el parque 𖠋𖠋𖠋.
+La música suena muy alta en la fiesta ♬⋆.˚.
+Los pájaros cantan hermosas melodías al amanecer ༄.°."""
 
 # Stemmer en español
 stemmer = SnowballStemmer("spanish")
@@ -33,8 +33,8 @@ def tokenize_and_stem(text):
 col1, col2 = st.columns([2, 1])
 
 with col1:
-    text_input = st.text_area("📝 Documentos (uno por línea):", default_docs, height=150)
-    question = st.text_input("❓ Escribe tu pregunta:", "¿Dónde juegan el perro y el gato?")
+    text_input = st.text_area("» Documentos (uno por línea):", default_docs, height=150)
+    question = st.text_input("﹖ Escribe tu pregunta:", "¿Dónde juegan el perro y el gato?")
 
 with col2:
     st.markdown("### 💡 Preguntas sugeridas:")
